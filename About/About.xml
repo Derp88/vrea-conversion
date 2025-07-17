@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>derp88.VREAndroidConversion</packageId>
+	<name>VRE: Android Conversion</name>
+	<author>Derp88_</author>
+	<supportedVersions>
+		<li>1.6</li>
+    </supportedVersions>
+	<description>To be written!</description>
+	<modDependencies>
+		<li>
+			<packageId>vanillaracesexpanded.android</packageId>
+			<displayName>Vanilla Races Expanded - Android</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2975771801</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+    	<li>brrainz.harmony</li>
+    	<li>OskarPotocki.vanillafactionsexpanded.Core</li>
+    	<li>OskarPotocki.vanillaracesexpanded.android</li>
+	</loadAfter>
+</ModMetaData>
