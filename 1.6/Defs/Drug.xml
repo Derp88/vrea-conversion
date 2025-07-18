@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="MakeableDrugBase">
+        <defName>ConversionSerum</defName>
+        <label>Mechanical Ascension Serum</label>
+        <description>An advanced serum that uses mechanites to convert biological pawns into androids.</description>
+        <graphicData>
+            <texPath>Items/ConversionSerum</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <Mass>0.01</Mass>
+        </statBases>
+    </ThingDef>
+</Defs>
