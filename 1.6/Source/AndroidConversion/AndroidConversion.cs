@@ -15,6 +15,18 @@ namespace AndroidConversion
         {
             foreach (Gene gene in pawn.genes?.GenesListForReading)
             {
+                //Check if pawn is an android
+                if (gene.def.defName == "VREA_Power")
+                {
+                    //If pawn is an android, spawn a replacement serum and give warning.
+                    Messages.Message("This item does not work on androids." , pawn, MessageTypeDefOf.RejectInput, historical: false);
+                    ThingDef replacementSerum = ThingDef.Named("ConversionSerum");
+                    GenSpawn.Spawn(replacementSerum, pawn.Position, pawn.Map);
+                    return;
+                }
+            }
+            foreach (Gene gene in pawn.genes?.GenesListForReading)
+            {
                 pawn.genes?.RemoveGene(gene);
             }
             pawn.genes?.SetXenotype(destinationXenotype);
