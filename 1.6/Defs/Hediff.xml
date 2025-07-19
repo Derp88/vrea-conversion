@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef ParentName="DiseaseBase">
+        <defName>ConversionComa</defName>
+        <label>conversion Coma</label>
+        <labelNoun>a conversion Coma</labelNoun>
+        <description>The serum mechanites place the body into a coma for a day to safely complete the conversion process.</description>
+        <defaultLabelColor>(.502,0.722,0.745)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>60000~60000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

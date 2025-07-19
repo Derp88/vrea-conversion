@@ -49,7 +49,9 @@
             <ingestReportString>Ingesting Mechanical Ascension Serum.</ingestReportString>
             <showIngestFloatOption>false</showIngestFloatOption> <!-- Useable does this -->
             <outcomeDoers>
-                <!--<li Class="IngestionOutcomeDoer_UseThing" />-->
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ConversionComa</hediffDef>
+                </li>
                 <li Class = "AndroidConversion.IngestionOutcomeDoer_ChangeXenotype">
                     <destinationXenotype>VREA_AndroidAwakened</destinationXenotype>
                 </li>
@@ -66,7 +68,6 @@
                 <useJob>Ingest</useJob>
                 <showUseGizmo>true</showUseGizmo>
             </li>
-            <!--<li Class="CompProperties_Serum" />-->
         </comps>
     <recipeMaker>
         <researchPrerequisite>VREA_AndroidTech</researchPrerequisite>
